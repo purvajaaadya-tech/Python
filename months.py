@@ -1,14 +1,4 @@
-print("these are the months of the year.")
-print("January (31 days).")
-print("Febuarary (28/29 days).")
-print("March (31 days).")
-print("April (30 days).")
-print("May (31 days).")
-print("June (30 days).")
-print("July (31 days).")
-print("August (31 days).")
-print("September (30 days).")
-print("October (31 days).")
-print("November (30 days).")
-print("December (31 days).")
-print("there are 12 months in a year.")
+import calendar
+
+for month in calendar.month_name:
+    print(month)
