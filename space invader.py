@@ -109,4 +109,27 @@ while r:
             got()
             break
 
-        
+        ex[i] += exc[i]
+        if ex[i] <= 0 or ex[i] >= sw - 64:
+            exc[i] *= -1
+            ey[i] += eyc[i]
+
+        if ic(ex[i], ey[i], bx, by):
+            by = psy
+            bs = "ready"
+            sv += 1
+            ex[i] = random.randint(0, sw - 64)
+            ey[i] = random.randint(esym, esyma)
+
+        e(ex[i], ey[i], i)
+
+    if by <= 0:
+        by = psy
+        bs = "ready"
+    elif bs =="fire":
+        fb(bx, by)
+        by -= byc
+
+    p(px, py)
+    ss(tx, ty)
+    pygame.display.update()
