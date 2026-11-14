@@ -1,4 +1,4 @@
-print("=== CURRENCY DENOMINATION CALCULATOR ===\n")
+print("=== CURRENCY DENOMINATION CALCULATOR ===")
 t500 = t200 = t100 = t50 = t20 = t10 = t5 = t2 = t1 = 0
 
 cs = 0
@@ -13,10 +13,10 @@ while s:
         print("Negative amount. Please enter a positive integer. \n")
         continue
 
-    print(f"\nDispensing {a} ruppees for {n}: ")
+    print(f"\nDispensing {a} rupees for {n}: ")
     r = a
     idx = 1
-    while idx <= 6:
+    while idx <= 9:
 
         if idx == 1: v = 500
         elif idx == 2: v = 200
@@ -51,7 +51,7 @@ while s:
         s = False
 
 print("\n=== DENOMINATION REPORT ===")
-for sl in range(1, 7):
+for sl in range(1, 9):
     if sl == 1: v, t = 500, t500
     elif sl == 2: v, t = 200, t200
     elif sl == 3: v, t = 100, t100
